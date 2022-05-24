@@ -9,4 +9,6 @@ return {
          require "custom.plugins.truezen"
       end,
    },
+   ["p00f/nvim-ts-rainbow"] = {},
+   ["skywind3000/asyncrun.vim"] = {}
 }
