@@ -9,6 +9,15 @@ return {
          require "custom.plugins.truezen"
       end,
    },
-   ["p00f/nvim-ts-rainbow"] = {},
-   ["skywind3000/asyncrun.vim"] = {}
+   ["skywind3000/asyncrun.vim"] = {},
+   ["karb94/neoscroll.nvim"] = {
+       config = function()
+          require("neoscroll").setup()
+       end,
+
+       -- lazy loading
+       setup = function()
+         nvchad.packer_lazy_load "neoscroll.nvim"
+       end,
+  },
 }
