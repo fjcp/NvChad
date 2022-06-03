@@ -42,7 +42,11 @@ M.plugins = {
    },
 
    -- add, modify, remove plugins
-   user = {},
+   user = {
+     ["goolord/alpha-nvim"] = {
+       disable = false,
+     },
+   },
 }
 
 -- check core.mappings for table structure
